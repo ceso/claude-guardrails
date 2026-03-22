@@ -13,7 +13,7 @@ Minimal security config for daily dev work. Three layers, near-zero friction.
 - SSH keys, AWS creds, GCP config, Docker config
 - .env files (read and edit)
 - .pem and .key files
-- npm/pip/git credentials
+- Homebrew config, git credentials
 - Claude's own settings
 
 **Hooks (Bash commands):**

@@ -175,7 +175,7 @@ For rolling this out across the team:
 
 ### CI/CD Integration (Recommended)
 - Add Semgrep or similar SAST tool to your pipeline
-- Run `npm audit` / `pip audit` on every PR
+- Run dependency audit tools on every PR
 - Consider Codacy Guardrails MCP for real-time scanning during code generation
 
 ### MCP Server Policy

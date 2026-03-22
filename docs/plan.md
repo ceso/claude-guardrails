@@ -24,12 +24,11 @@ Ship a ready-to-use security configuration package for Claude Code. Two variants
 - [x] `uninstall.sh` — Surgical remove (subtracts only guardrails entries, preserves user's custom config)
 - [x] Uninstall section in README documenting the approach
 
-### v0.3 — npx distribution
-- [x] `bin/claude-guardrails` — Shell CLI entrypoint (install, uninstall, --help, --version)
-- [x] `package.json` — Zero-dependency npm package with bin field
+### v0.3 — Distribution cleanup
+- [x] Removed npx/npm distribution (bin/, package.json)
 - [x] `LICENSE` — MIT license
-- [x] Updated README Quick Start to lead with `npx claude-guardrails install`
-- [x] Updated README Uninstall to lead with `npx claude-guardrails uninstall`
+- [x] Updated README Quick Start to use `./install.sh` directly
+- [x] Updated README Uninstall to use `./uninstall.sh` directly
 
 ## Next Up
 
@@ -46,7 +45,7 @@ Ship a ready-to-use security configuration package for Claude Code. Two variants
 - [x] `uninstall.sh` — Surgical remove approach (done in v0.2)
 - [ ] Version check — Warn if installed config is outdated vs repo
 - [x] CI test — GitHub Action that runs install.sh in a container to verify it works
-- [x] Homebrew / npx distribution — `npx claude-guardrails install` (done in v0.3)
+- [x] Distribution cleanup — direct `./install.sh` usage (done in v0.3)
 - [ ] Per-project install mode — Write to `.claude/settings.local.json` instead of global
 - [ ] Hook test suite — Automated tests that verify each hook blocks what it should
 - [ ] MCP server allowlist template — Starter config for common trusted servers
